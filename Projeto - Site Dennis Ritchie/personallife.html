@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dennis Ritchie - The Father of Modern Computing</title>
+      <meta name="keywords" content="HTML, CSS, Javascript, Dennis Ritchie, C, Unix, Universidade de Aveiro, Computing">
+      <meta name="description" content="The importance of Dennis Ritchie in the Modern World of Computing">
+      <meta charset="utf-8">
+      <meta name="author" content="Diogo Daniel Soares Ferreira and Luís Davide Jesus Leira">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+      <!--DennisRitchieFont-->
+      <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+      <!--Leaflet CSS-->
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+      <!--Styles CSS-->
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body onload="mapLife()">
+      <!--topContainer-->
+      <div>
+         <!--navegationBar-->
+         <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+               <div class="container">
+                  <a href="#" class="navbar-brand">Dennis Ritchie</a>
+                  <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                  <font color="white">Menu</font>
+                  </button>
+                  <div class="collapse navbar-collapse navHeaderCollapse">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="./index.html" accesskey="h">Home</a></li>
+                        <li class="active"><a href="./personallife.html">Personal life</a></li>
+                        <li><a href="./c.html" accesskey="c">C</a></li>
+                        <li><a href="./unix.html" accesskey="u">Unix</a></li>
+                        <li><a href="./resources.html" accesskey="r">Resources</a></li>
+                        <li><a href="./about.html" accesskey="a">About</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--middleContainer-->
+      <div class="container">
+         <div class="row">
+            <!--rightMenu-->
+            <div class="col-md-3">
+               <ul class="nav nav-pills nav-stacked">
+                  <li class="active moveleft"><a href="#Education and University">Education and<br>University</a></li>
+                  <li class="active moveleft"><a href="#Developing Unix">Developing Unix</a></li>
+                  <li class="active moveleft"><a href="#Creation of C programming language">Creation of C</a></li>
+                  <li class="active moveleft"><a href="#Awards">Awards</a></li>
+                  <li class="active moveleft"><a href="#Death">Death</a></li>
+               </ul>
+            </div>
+            <!--Content-->
+            <div class="col-main">
+               <h1 class="header">Personal life</h1>
+               <div id="Education and University">
+                    <br>
+                    <div class="line-separator"></div>
+                    <br>
+                    <h3>Education and University</h3>
+                    <p>Dennis Ritchie was born on September 4, 1941, in New York, but he quickly moved to New Jersey while he was still a young boy. After a happy and successful childhood, he graduated from Harvard University in 1967 with bachelor's degrees in Applied Mathematics and Physics.</p>
+                    <p>In University, he was interested about Harvard's computer system, Univac I, so he began exploring computers more thoroughly, especially on how they were programmed. His father, Alistair Richie, worked at Bell Laboratories (formerly known as AT&amp;T), and was an expert on digital systems, with a published book <i>Switching Circuits</i>, about the switching circuit theory. However, his child was more interested on software rather than hardware. In Harvard, Ritchie got offered a job at the Massachusetts Institute of Technology (MIT), which he keep for many years.</p>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                           <h4>"My undergraduate experience convinced me that I was not smart enough to be a physicist, and that computers were quite neat. My graduate school experience convinced me that I was not smart enough to be an expert in the theory of algorithms and also that I liked procedural languages better than functional ones."</h4>
+                           <h3 class="dennis">Dennis Ritchie</h3>
+                        </div>
+                    </div>
+                    <figure class="opacityit">
+                        <img src="personallife_univacI.jpg" alt="Univac I, the computer that inspired Dennis Ritchie to pursuit a career of programming. Source: Flickr, stuckincustoms" class="img-thumbnail">
+                        <figcaption><b>Univac I, the computer that inspired Dennis Ritchie to pursuit a career of programming. Source: Flickr, stuckincustoms</b></figcaption>
+                        <br>
+                    </figure>
+                </div>
+                <br>
+                <h4>Here we have a map with some important places of Dennis Ritchie's life.</h4>
+                <div class="panel panel-default">
+                    <div class="opacityit" id="map"></div>
+                </div>
+                <div id="Developing Unix"></div>
+                    <br>
+                    <br>
+                    <h3>Developing Unix</h3>
+                    <p>In MIT, Richie focused on developing an operating system portable, smaller and nicer to use. At the time, computers took up entire rooms and were not easy to manage nor work with. So, he gathered up some companies, scientists and colleagues and they all agreed on building the <i>Multics</i>. At the end of the project, he decided to follow a career on programming, rather than physics.</p>
+                    <p>Following the steps of his father, Dennis began working with Kenneth Thompson on Bell Labs in 1966. They had the goal of improve Dennis work on MIT and create a simple operating system, that any person could use without any major knowledge on computer science. After only a few months of work, they created <a href="unix.html">Unix</a>.</p>
+                    <br>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h4>"Obviously, the person who had most influence on my career was Ken Thompson."</h4>
+                            <h3 class="dennis">Dennis Ritchie</h3>
+                        </div>
+                    </div>
+                <figure class="opacityit">
+                    <img src="personallife_ritchieandthompson.jpg" alt="Dennis Ritchie and Kenneth Thompson developing UNIX. Source: Flickr, 12693492@N04" class="img-thumbnail">
+                    <figcaption><b>Dennis Ritchie and Kenneth Thompson developing Unix. Source: Flickr, 12693492@N04</b></figcaption>
+                <br>
+                </figure>
+                <div id="Creation of C programming language">
+                    <br>
+                    <br>
+                    <h3>Creation of C programming language</h3>
+                    <p>Unix was a success, although there were still room for improvements. It was written in machine language (assembly), therefore it was really hard to deal with multiple computers and their memories, which caused some bugs hard to fix. So, Ritchie came up with a new programming language: <a href="c.html">C</a>. C quickly became one of the most used programming languages in the world. It was simple, fast and easy to learn. By 1973, Dennis and his partner had re-written Unix using "C" instead of machine language, fixing the bugs previously noticed, showing the portability and effectiveness of the language.</p>
+                    <br>
+                    <figure class="opacityit">
+                        <img src="personallife_c.jpg" alt="The first book published about C, by Dennis Ritchie and Brain Kerninghan, in 1978. Source: Flickr, darthpedrius" class="img-thumbnail">
+                        <figcaption><b>The first book published about C, by Dennis Ritchie and Brain Kerninghan, in 1978. Source: Flickr, darthpedrius</b></figcaption>
+                        <br>
+                    </figure>
+                </div>
+                <div id="Awards">
+                    <br>
+                    <br>
+                    <h3>Awards</h3>
+                    <p>Since then, Dennis Ritchie is referred almost as an informatic guru, with two books published (<i>Unix Programmer's Manual (1971)</i> and <i>The C Programming Language (1978)</i>) and many awards:</p>
+                    <ul>
+                        <li>In 1983, he and his partner, Thompson, received the Turing Award, the <i>highest distinction in computer science</i> <i>for their development of generic operating systems theory and specifically for the implementation of the Unix operating system</i>;</li>
+                        <li>In 1990, both received the IEEE award (Institute of Electrical and Electronics Engineers);</li>
+                        <li>In 1997, both were made Fellow of the Computer History Museum;</li>
+                        <li>In 1999, both received a National Medal of Technology, from the President Bill Clinton;</li>
+                        <li>In 2005, Dennis Ritchie received an <i>Achievement Award</i> by the Industrial Research Institute;</li>
+                        <li>In 2011, both received the Japan Prize for Information and Communications.</li>
+                    </ul>
+                    <br>
+                    <figure class="opacityit">
+                     <img src="personallife_japanprize.jpg" alt="Dennis Richie receiving the Japan Prize for Information and Communications (2011). Source: Flickr, dpanyikdale" class="img-thumbnail">
+                     <figcaption><b>Dennis Richie receiving the Japan Prize for Information and Communications (2011). Source: Flickr, dpanyikdale</b></figcaption>
+                    </figure>
+                    <br>
+                </div>
+                <div id="Death">
+                    <br>
+                    <br>
+                    <h3>Death</h3>
+                    <p>Ritchie died on October 12, 2011, in his house on New Jersey. He had 70 years and lived alone. The first to confirm his dead was Rob Pike, his colleague of MIT. It is not certain what caused his death, although he had prostate cancer and a heart disease. In the following days, many testimonials were made by computer scientists or former colleagues of him  like Jeong Kim, president of Alcatel-Lucent Bell Labs.</p>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h4>"There's that line from Newton about standing on the shoulders of giants. We're all standing on Dennis' shoulders."</h4>
+                            <h3 class="dennis">Brian Kernighan</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div>
+      <!--Footer-->
+      <nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+         <div id="footer" align="center">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/"href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Website - Dennis Ritchie - The Father of Modern Computing</span> by <a href="mailto:diogodanielsoaresferreira@ua.pt">Diogo Daniel Soares Ferreira</a> e <a href="mailto:luisleira@ua.pt">Luís Davide Jesus Leira</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"  target="_blank">Creative Commons Atribuição 4.0 Internacional License</a>.
+         </div>
+      </nav>
+      <!--Scripts-->
+      <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+      <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+      <script src="http://getbootstrap.com/assets/js/docs.min.js"></script> 
+      <script src="scripts.js"></script>
+   </body>
+</html>
+<!--
+   Diogo Daniel Soares Ferreira
+   Luís Davide Jesus Leira
+   Laboratórios de Informática - MIECT
+   Universidade de Aveiro, 2014
+   -->

@@ -1,0 +1,27 @@
+\select@language {english}
+\select@language {portuguese}
+\contentsline {part}{I\hspace {1em}Apresenta\IeC {\c c}\IeC {\~a}o}{5}{part.1}
+\contentsline {chapter}{\numberline {1}Resumo}{7}{chapter.1}
+\contentsline {paragraph}{ }{7}{section*.2}
+\contentsline {chapter}{\numberline {2}Introdu\IeC {\c c}\IeC {\~a}o}{9}{chapter.2}
+\contentsline {paragraph}{ }{9}{section*.3}
+\contentsline {part}{II\hspace {1em}Desenvolvimento}{11}{part.2}
+\contentsline {chapter}{\numberline {3}Ambientes gr\IeC {\'a}ficos}{13}{chapter.3}
+\contentsline {paragraph}{ }{13}{section*.4}
+\contentsline {chapter}{\numberline {4}KDE}{15}{chapter.4}
+\contentsline {paragraph}{ }{15}{section*.5}
+\contentsline {chapter}{\numberline {5}Ubuntu Unity}{19}{chapter.5}
+\contentsline {paragraph}{ }{19}{section*.6}
+\contentsline {chapter}{\numberline {6}LXDE}{23}{chapter.6}
+\contentsline {paragraph}{ }{23}{section*.7}
+\contentsline {chapter}{\numberline {7}E17}{27}{chapter.7}
+\contentsline {paragraph}{ }{27}{section*.8}
+\contentsline {chapter}{\numberline {8}XFCE4}{31}{chapter.8}
+\contentsline {paragraph}{ }{31}{section*.9}
+\contentsline {chapter}{\numberline {9}xmonad}{35}{chapter.9}
+\contentsline {paragraph}{ }{35}{section*.10}
+\contentsline {chapter}{\numberline {10}awesome}{39}{chapter.10}
+\contentsline {paragraph}{ }{39}{section*.11}
+\contentsline {part}{III\hspace {1em}Conclus\IeC {\~o}es}{43}{part.3}
+\contentsline {chapter}{\numberline {11}Conclus\IeC {\~a}o}{45}{chapter.11}
+\contentsline {paragraph}{ }{45}{section*.12}

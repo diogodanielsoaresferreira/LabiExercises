@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dennis Ritchie - The Father of Modern Computing</title>
+      <meta name="keywords" content="HTML, CSS, Javascript, Dennis Ritchie, C, Unix, Universidade de Aveiro, Computing">
+      <meta name="description" content="The importance of Dennis Ritchie in the Modern World of Computing">
+      <meta charset="utf-8">
+      <meta name="author" content="Diogo Daniel Soares Ferreira and Luís Davide Jesus Leira">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+      <!--DennisRitchieFont-->
+      <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+      <!--Visjs CSS-->
+      <link href="http://visjs.org/dist/vis.css" rel="stylesheet" type="text/css" />
+      <!--Styles CSS-->
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body onload="lifetimeline();">
+      <!--topContainer-->
+      <div>
+         <!--navegationBar-->
+         <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+               <div class="container">
+                  <a href="#" class="navbar-brand">Dennis Ritchie</a>
+                  <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                  <font color="white">Menu</font>
+                  </button>
+                  <div class="collapse navbar-collapse navHeaderCollapse">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="./index.html" accesskey="h">Home</a></li>
+                        <li><a href="./personallife.html" accesskey="p">Personal life</a></li>
+                        <li><a href="./c.html" accesskey="c">C</a></li>
+                        <li><a href="./unix.html" accesskey="u">Unix</a></li>
+                        <li><a href="./resources.html" accesskey="r">Resources</a></li>
+                        <li><a href="./about.html" accesskey="a">About</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--middleContainer-->
+      <div class="container">
+         <div class="row">
+            <!--mainImage-->
+            <div class="col-main page">
+               <div id="banner">
+                  <img src="mainpage_image.jpg" class="mainimage" alt="Country: UNIX | Language: C">
+               </div>
+               <br>
+               <div class="line-separator"></div>
+               <!--Content-->
+               <h2>Welcome to our dedicated website to the father of Unix and C</h2>
+               <br>
+               <div class="container">
+                  <!--leftBox-->
+                  <div class="col-sm-6 col-md-4">
+                     <!--imageLeftBox-->
+                     <div class="thumbnail">
+                        <a href="http://www.bell-labs.com/" target="_blank"><img class="opacityit" alt="Dennis Ritchie - Bell Labs" src="mainpage_belllabs.jpg" /></a>
+                        <!--contentLeftBox-->
+                        <div class="caption">
+                            <p>Do you know that Dennis Ritchie worked in the Computing Sciences Research Center of Bell Labs until 2005? After that, a reorganization redistributed this group and named Convergence, Software, and Computer Science Laboratory. Click on the image to take a look at the Bell Labs website!</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--centerBox-->
+                  <div class="col-sm-6 col-md-4">
+                     <!--imageCenterBox-->
+                     <div class="thumbnail">
+                        <a href="http://www.unix.org/" target="_blank"><img class="opacityit" alt="Computer - Unix" src="mainpage_unix.jpg" /></a>
+                        <!--contentCenterBox-->
+                        <div class="caption">
+                            <p>Do you know that <a href="http://www.unix.org/" target="_blank">Unix</a> development started in 1969? It was at Bell Labs, by the hand of Dennis Ritchie, Ken Thompson, Brian Kernighan, Douglas McIlroy, and Joe Ossanna. It was designed to be small and adjustable for the programmers needs. It was the beginning of something different that later would build the base of what computers are today.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--rightBox-->
+                  <div class="col-sm-6 col-md-4">
+                     <!--imageRightBox-->
+                     <div class="thumbnail">
+                        <a href="http://www.cprogramming.com/" target="_blank"><img class="opacityit" alt="Book - The C Programming Language" src="mainpage_c.jpg" /></a>
+                        <!--contentRightBox-->
+                        <div class="caption">
+                            <p>Do you know that Unix was written in <a href="http://www.cprogramming.com/" target="_blank">C</a> programming language? Dennis Ritchie created C with the intention of being implemented in operating systems. It was proved that it could be used for several applications, being nowadays independent of Unix and one of the most powerful high-level programming languages.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <br>
+               <br>
+               <!--mainContent-->
+               <div>
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                        <h4>"My work was fairly theoretical. It was in recursive function theory. And in particular, hierarchies of functions in terms of computational complexity. I got involved in real computers and programming mainly by being - well, I was interested even as I came to graduate school."</h4>
+                        <h3 class="dennis">Dennis Ritchie</h3>
+                     </div>
+                  </div><br>
+                   <!--Timeline-->
+                   <div id="lifetimeline"></div>
+                  <br><br><br>
+                   <p align="center">This responsive website was created by Diogo Daniel Soares Ferreira and Luís Davide Jesus Leira and was developed as our first project for Computer Labs in <a href="http://www.ua.pt/">University of Aveiro</a>. Have you checked our Easter Egg? See if you can find it at <a href="resources.html">Resources</a>.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Footer-->
+      <nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+         <div id="footer" align="center">
+             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/"href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Website - Dennis Ritchie - The Father of Modern Computing</span> by <a href="mailto:diogodanielsoaresferreira@ua.pt">Diogo Daniel Soares Ferreira</a> e <a href="mailto:luisleira@ua.pt">Luís Davide Jesus Leira</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"  target="_blank">Creative Commons Atribuição 4.0 Internacional License</a>.
+         </div>
+      </nav>
+      <!--Scripts-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+      <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+      <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+      <script src="http://visjs.org/dist/vis.js"></script>
+      <script src="scripts.js"></script>
+   </body>
+</html>
+<!--
+   Diogo Daniel Soares Ferreira
+   Luís Davide Jesus Leira
+   Laboratórios de Informática - MIECT
+   Universidade de Aveiro, 2014
+   -->

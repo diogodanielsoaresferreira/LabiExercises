@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dennis Ritchie - The Father of Modern Computing</title>
+      <meta name="keywords" content="HTML, CSS, Javascript, Dennis Ritchie, C, Unix, Universidade de Aveiro, Computing">
+      <meta name="description" content="The importance of Dennis Ritchie in the Modern World of Computing">
+      <meta charset="utf-8">
+      <meta name="author" content="Diogo Daniel Soares Ferreira and Luís Davide Jesus Leira">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+      <!--DennisRitchieFont-->
+      <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+      <!--Styles CSS-->
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body onload="unixTree();">
+      <!--topContainer-->
+      <div>
+         <!--navegationBar-->
+         <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+               <div class="container">
+                  <a href="#" class="navbar-brand">Dennis Ritchie</a>
+                  <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                  <font color="white">Menu</font>
+                  </button>
+                  <div class="collapse navbar-collapse navHeaderCollapse">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="./index.html" accesskey="h">Home</a></li>
+                        <li><a href="./personallife.html" accesskey="p">Personal life</a></li>
+                        <li><a href="./c.html" accesskey="c">C</a></li>
+                        <li class="active"><a href="./unix.html">Unix</a></li>
+                        <li><a href="./resources.html" accesskey="r">Resources</a></li>
+                        <li><a href="./about.html" accesskey="a">About</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--middleContainer-->
+      <div class="container">
+         <div class="row">
+            <!--rightMenu-->
+            <div class="col-md-3">
+               <ul class="nav nav-pills nav-stacked">
+                  <li class="active moveleft"><a href="#History">History</a></li>
+                  <li class="active moveleft"><a href="#Unix system">Unix system</a></li>
+                  <li class="active moveleft"><a href="#Free software/Open source">Free software/<br>Open source</a></li>
+                  <li class="active moveleft"><a href="#Unix-like operating systems">Unix-like operating<br>systems</a></li>
+               </ul>
+            </div>
+            <!--Content-->
+            <div class="col-main">
+                <h1 class="header">Unix</h1>
+                <div id="History">
+                    <br>
+                    <div class="line-separator"></div>
+                    <br>
+                    <h3>History</h3>
+                    <p>In 1969, Ken Thompson, Dennis Ritchie and other computer scientists at AT&amp;T Bell Labs, created the Unix operating system. Originally the name was Unics <i>(UNiplexed Information and Computing Service)</i> because Ken Thompson worked on the project of Multics <i>(Multiplexed Information and Computing System)</i> operating system, being intended as a pun of the last mentioned. Later, they changed to Unix, as we know nowadays. It was the answer to the need of making a new and better system than Multics (which was a failure).</p>
+                    <div class="panel-body">
+                       <h4>"One of the obvious things that went wrong with Multics as a commercial success was just that it was sort of over-engineered in a sense. There was just too much in it."</h4>
+                       <h3 class="dennis">Dennis Ritchie</h3>
+                    </div>
+                    <br>
+                    <p>Unix first edition was released in 1971. It was designed to be simple, small and to improve the interaction between computers (being possible to be adapted, moved and being used on different machines). The first version was created on a PDP-7 minicomputer and was written in assembly-language. Quickly it was adapted and ported to the PDP-11, taking another small step forward. Some time later, Dennis Ritchie created the <a href="c.html">C</a> programming language (as improvement and replace of B language, developed by Thompson) and used it on the rewriting of Unix. This factor provided a great development for this operating system, giving it a much more portable software.</p>
+                    <p>In 1975, the sixth version of Unix was the first released outside Bell Labs, being available for educational and research institutions. It was the basis of the variant called the <a href="#BSD">Berkeley Software Distribution (BSD)</a>, developed at the University of California in Berkeley. BSD introduced several innovations such as C shell. At AT&amp;T they continued to develop the system on their way and reached the System V version, which was considered one of the two major versions of Unix, together with BSD. Over the years, Unix served as inspiration to new projects and began to appear Unix-like systems as <a href="#BSD">BSD</a>, <a href="#Linux">Linux</a> and others, being also the basis for Apple’s Mac OS X.</p>
+                    <div class="panel-body">
+                        <h4>“That brings me to Dennis Ritchie. Our collaboration has been a thing of beauty. In the ten years that we have worked together, I can recall only one case of incoordination of work. On that occasion, I discovered that we both had written the same 20-line assembly language program. I compared the sources and was astounded to find that they matched character-for-character. The result of our work together has been far greater than the work that we each contributed.”</h4>
+                        <h3 class="dennis">Ken Thompson</h3>
+                    </div>
+                    <br>
+                    <br>
+                    <figure class="opacityit">
+                        <img src="unix_pdp-7.jpg" alt="DEC PDP-7 minicomputer. Source: Flickr, Coffee and Computers" class="img-thumbnail">
+                        <figcaption><b>DEC PDP-7 minicomputer. Source: Flickr, Coffee and Computers</b></figcaption>
+                        <br>
+                    </figure>
+                </div>
+                <div id="Unix system">
+                   <br>
+                   <br>
+                   <h3>Unix system</h3>
+                   <p>Unix was a breakthrough in the computer area. In the following of this text, we will display some of the main features of this operating system:
+                    <ul>
+                        <li><b>Portability.</b> The system is largely written in C high-level programming language, which provides the possibility of being easily modified and transferred to other machines and run in different hardware.</li>
+                        <li><b>Multi-user.</b> It can be used safely by multiple users by connecting via terminals.</li>
+                        <li><b>Multi-tasking.</b> Each user can run more than one program simultaneously.</li>
+                        <li><b>Unix shell.</b> It has a simple user interface that offers a good experience for programmers, not needing to know the hardware thoroughly. Pipes and Filters allowed to create more complex programs.</li>
+                        <li><b>Hierarchical file system.</b> This structure allows the system to be easily accessed and well-ordered, which makes it more efficient.</li>
+                        <li><b>Utilities and tools.</b> It offers several programs with various functions and a range of tools that helps on the build of new utilities and software development and maintenance.</li>
+                    </ul>
+                    </p>
+                    <p>The Unix operating system can be divided in three main parts: the kernel, the shell and the system programs. The kernel acts as an intermediary between the high functions and hardware, doing the system main management. It's between system calls that programs request a service from the kernel. Through the shell, the user can interact and communicate with the operating system. It can run utilities and tools by typing the right commands on the command line. System programs include the commands and applications aforementioned. The user has also access to a graphical user interface that turns the communication more intuitive and pleasant.</p>
+                    <p>Unix and its variants are widely used in servers, workstations and mobile devices. The lightweight and strength of this operating systems offered sufficient conditions to perform the necessary tasks simply and efficiently. And as an example of Unix influence, we can see the Android system that is based on the Linux kernel (Unix-like system). Unix also helped the development of the Internet, providing an excellent plataform for networking servers.</p>
+                    <p>Dennis Ritchie contributions were extremely important to the modern computing as we know today.</p>
+                    <div class="panel-body">
+                        <h4>"UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity."</h4>
+                        <h3 class="dennis">Dennis Ritchie</h3>
+                    </div>
+                </div>
+                <div id="Free software/Open source">
+                    <br>
+                    <br>
+                    <h3>Free software/Open source</h3>
+                    <p>In 1983, Richard Stallman created the GNU project with the purpose of developing a Unix-like free operating system ("GNU" means "GNU's not UNIX"). It could be freely used, shared (copied and distributed), studied and modified (all legal by its licence). Later, in 1985, Stallman founded the Free Software Foundation (FSF) to support the free software movement he was encouraging. It was a successful social movement. The use of the word "free" in this context is associated with freedom and not price (so, it can be marketed or not). It supports the ideology that users control the program. The Free Software definition was published by Free Software Foundation. The GNU/Linux operating system is according to their definition.</p>
+                     <p>The term Open Source appeared as an descendant of Free Software. Although, it was quickly separated from the original term and gave rise to a new movement with almost the same goals but some different values. Its target centers in the source code. The coder is allowed to have more control over his program. The open source software promoting responsability is from Open Source Initiative (OSI) that was founded in 1998. They try to support all open source code licences.</p>
+                    <p>Researchers allege that Open Source appeal more to businesses and refuses the ethics of FSF, focusing on development purposes (like fixing problems, making the software stronger and reliable), while the Free Software is more foccused in the social movement (giving the right to freedom).</p>
+                    <p>The Seventh Version Unix that was released in 1979 is under a free software licence.</p>
+                  
+                </div>
+                <div id="Unix-like operating systems">
+                    <br>
+                    <br>
+                    <h3>Unix-like operating systems</h3>
+                    <div id="BSD">
+                        <br>
+                        <br>
+                        <h4 class="lefttitle"><i><u>BSD operating systems</u></i></h4>
+                        <p>Berkeley Software Distribution (BSD) is an operating system that was developed in the seventies and eighties at the University of California. Various persons claim that Bill Joy was largely responsible for creation and development of this operating system. It was worked and introduced several innovations compared to Unix. Soon, these new features were adopted by Unix, as we said above in the <a href="#Unix system">Unix system</a>. Firstly, it was under Free Software licence but Bill Joy replaced it by the BSD licence. It was the beginning of a new and large family - the BSD operating systems.</p>
+                        <p>Many Unix-like operating systems like FreeBSD, NetBSD, OpenBSD, DragonFlyBSD (created as a fork of the first mentioned) derived from 386BSD and 4.4BSD-Lite which are based on BSD. They are all open source under the BSD licence.</p>
+                        <p>Other versions of Unix like SunOS and NeXTSTEP also made impact on the computing world. The last one mentioned was developed by NeXT, a american company that was bought in 1996 by Apple Inc. and it would be the beginning of the match of NeXT's software and Apple's hardware, which would give rise to Darwin and then OS X (Unix-certified) and iOs that are the most commercially successful BSD variants.</p>
+                        <figure class="opacityit">
+                            <img src="unix_bsdmascot.jpg" alt="BSD Daemon (called Beastie) - the generic BSD operating systems mascot. Source: Flickr, Morton Lin" class="img-thumbnail">
+                            <figcaption><b>BSD Daemon (called Beastie) - the generic BSD operating systems mascot. Source: Flickr, Morton Lin</b></figcaption>
+                            <br>
+                        </figure>
+                    </div>
+                    <div id="Linux">
+                        <br>
+                        <br>
+                        <h4 class="lefttitle"><i><u>Linux</u></i></h5>
+                        <p>Linux is an operating system kernel created in 1991 (initially as a personal project) by Linus Torvalds. It was designed based on a Unix-like operating system called MINIX (an operating system for educational purposes created by Andrew S. Tanenbaum). Firstly it was under its own licence but soon was released under a free software licence (known as GNU General Public License, idealized by Richard Stallman). Linux needed to be improved and it was worked in together with GNU developers (as GNU's project failed on their kernel - GNU Hurd). They added many GNU packages, being available several tools that were very important for his working. Linux distributions included GNU utilities, shell, development tools and others. These modifications lead to a full functional operating system that could be used by home users and developers.</p>
+                        <p>Nowadays, Linux is recognized as a stable and versatile operating system, one of the most used a pair of Windows and Apple's OS X systems. It is used on particular and professional environments.</p>
+                        <p>It is developed by the community (because it is open source, which allows sharing and collaboration from everyone who wants to help and develop) while Linus oversees it. This is one of the keys of Linux sucess because bugs are detected and fixed very fast with the help of everyone that joined the community.</p>
+                        <p>Linux kernel is used in several contexts such as:
+                            <ul>
+                                <li>Smart devices: several operating systems (Android OS kernel, smart TVs and others) are based on Linux kernel;</li>
+                                <li>Web servers: for example Google, Facebook, Amazon;</li>
+                                <li>Supercomputers: Most of the modern supercomputers run with Linux operating system.</li>
+                            </ul></p>
+                        <div class="panel-body">
+                            <h4>"I think the Linux phenomenon is quite delightful, because it draws so strongly on the basis that Unix provided. Linux seems to be the among the healthiest of the direct Unix derivatives, though there are also the various BSD systems as well as the more official offerings from the workstation and mainframe manufacturers."</h4>
+                            <h3 class="dennis">Dennis Ritchie</h3>
+                        </div>
+                        <br>
+                        <br>
+                        <figure class="opacityit">
+                            <img src="unix_belinux.jpg" alt="'Be Linux' advertisement. Source: Flickr, Kemal Y." class="img-thumbnail">
+                            <figcaption><b>"Be Linux" advertisement. Source: Flickr, Kemal Y.</b></figcaption>
+                            <br>
+                        </figure>
+                        <br>
+                        <br>
+                    </div>
+                    <div id="Unixfamilytree">
+                        <h4 class="lefttitle"><i><u>Unix family tree</u></i></h4>
+                        <b>The next tree does not have a responsive design.</b><br>
+                        <div id="treeData" onload="d3.layout.tree()"></div>
+                        <!--He had to put this scripts here because the tree doesn't work properly if we put them down with the others-->
+                        <script src="http://d3js.org/d3.v3.min.js"></script>
+                        <script src="scripts.js"></script>
+                        <!--End of the necessary scripts for the tree-->
+                        <p>This is an Unix family tree with some of the principal Unix-like systems. This tree is not separated by versions, but only by operating systems. Almost every systems influenced another ones.</p>
+                        <p><b>BSD</b> is one famous descendant of Unix. This one created the BSD family, which is composed by operating systems like <b>NeXTSTEP/OPENSTEP</b> (which gave rise to <b>Darwin</b> and <b>Mac OS X</b> - being the second mentioned an Unix-certified operating system and very influenced by the first), <b>FreeBSD</b> (being DragonFlyBSD a fork of it), <b>NetBSD</b>, <b>OpenBSD</b> and <b>SunOS</b>. For more information you can read <a href="#BSD">here</a>.</p>
+                        <p><b>Solaris</b> and <b>UnixWare</b> were based on Unix System V Release 4. Solaris was also influenced by BSD and Xenix and it was announced as the replacement of SunOS. </p>
+                        <p><b>Xenix</b> was a Unix version licensed by Microsoft from AT&amp;T. It it based on the Seventh Edition Unix and it is now discontinued.</p>
+                        <p><b>HP-UX</b> was initially based on Unix System III and it is Unix-certified. It was also hardly influenced by BSD.</p>
+                        <p><b>AIX</b> and <b>IRIX</b> were based on Unix System V (with some BSD compatible extensions). The first mentioned it is also Unix-certified.</p>
+                        <p><b>Minix</b> is a Unix clone (it does not contain AT&amp;T source code on it but it is very similar). It was very important and served as inspiration to the <b>Linux</b> kernel, giving rise to another Unix clone, GNU/Linux. For more information of the last mentioned, you can read <a href="#Linux">here</a>.</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div>
+      <!--Footer-->
+      <nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+         <div id="footer" align="center">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/"href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Website - Dennis Ritchie - The Father of Modern Computing</span> by <a href="mailto:diogodanielsoaresferreira@ua.pt">Diogo Daniel Soares Ferreira</a> e <a href="mailto:luisleira@ua.pt">Luís Davide Jesus Leira</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"  target="_blank">Creative Commons Atribuição 4.0 Internacional License</a>.
+         </div>
+      </nav>
+      <!--Scripts-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+      <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+      <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+   </body>
+</html>
+<!--
+   Diogo Daniel Soares Ferreira
+   Luís Davide Jesus Leira
+   Laboratórios de Informática - MIECT
+   Universidade de Aveiro, 2014
+   -->

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dennis Ritchie - The Father of Modern Computing</title>
+      <meta name="keywords" content="HTML, CSS, Javascript, Dennis Ritchie, C, Unix, Universidade de Aveiro, Computing">
+      <meta name="description" content="The importance of Dennis Ritchie in the Modern World of Computing">
+      <meta charset="utf-8">
+      <meta name="author" content="Diogo Daniel Soares Ferreira and Luís Davide Jesus Leira">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+      <!--DennisRitchieFont-->
+      <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+      <!--Styles CSS-->
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body onload="moveObj()" onload="loadSound();">
+      <!--topContainer-->
+      <div>
+         <!--navegationBar-->
+         <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+               <div class="container">
+                  <a href="#" class="navbar-brand">Dennis Ritchie</a>
+                  <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                  <font color="white">Menu</font>
+                  </button>
+                  <div class="collapse navbar-collapse navHeaderCollapse">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="./index.html" accesskey="h">Home</a></li>
+                        <li><a href="./personallife.html" accesskey="p">Personal life</a></li>
+                        <li><a href="./c.html" accesskey="c">C</a></li>
+                        <li><a href="./unix.html" accesskey="u">Unix</a></li>
+                        <li class="active"><a href="./resources.html">Resources</a></li>
+                        <li><a href="./about.html" accesskey="a">About</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--middleContainer-->
+      <div class="container">
+         <div class="row" id="row">
+            <!--rightMenu-->
+            <div class="col-md-3"  id="resrow">
+               <ul class="nav nav-pills nav-stacked">
+                  <li class="active moveleft"><a href="#Images">Images</a></li>
+                  <li class="active moveleft"><a href="#Videos">Videos</a></li>
+                  <li class="active moveleft"><a href="#Bibliography">Bibliography</a></li>
+               </ul>
+            </div>
+            <!--Content-->
+            <div class="col-main" id="mainrow">
+                <h1 class="header">Resources</h1>
+                <div id="Images">
+                    <br>
+                    <div class="line-separator"></div>
+                    <br>
+                    <h3>Images</h3>
+                    <figure class="opacityit">
+                        <img src="res_der.jpg" alt="Programming languages, operating systems and companies based on the work of Dennis Ritchie. Source: Flickr, darthpedrius" class="img-thumbnail"><br>
+                        <figcaption><b>Programming languages, operating systems and companies based on the work of Dennis Ritchie. Source: Flickr, darthpedrius</b></figcaption>
+                    </figure><br><br>
+                    <figure class="opacityit">
+                        <img src="res_pointer.jpg" alt="Famous quote from Dennis Ritchie. Source: Flickr, markuz." class="img-thumbnail"><br>
+                        <figcaption><b>Famous quote from Dennis Ritchie. Source: Flickr, markuz.</b></figcaption>
+                    </figure><br><br>
+                    <figure class="opacityit">
+                        <img src="res_denvsjobs.jpg" alt="Image comparing Steve Jobs and Dennis Ritchie. Source, darthpedrius." class="img-thumbnail"><br>
+                        <figcaption><b>Image comparing Steve Jobs and Dennis Ritchie. Source, darthpedrius.</b></figcaption>
+                    </figure><br><br>
+                    <figure class="opacityit">
+                        <img src="res_death.jpg" alt="Image remembering Dennis Ritchie. Source: Flickr, elsantuario." class="img-thumbnail"><br>
+                        <figcaption><b>Image remembering Dennis Ritchie. Source: Flickr, elsantuario.</b></figcaption>
+                    </figure><br><br>
+                    <!--EasterEgg button (it doesn't work on Safari if you don't have QuickTime)-->
+                    <button id="button" onclick="party()">PARTYYYYY!!!!!!</button>
+                    <!--End-->
+                </div>
+                <div class="Videos" id="Videos">
+                    <br>
+                    <br>
+                    <h3>Videos</h3><br>
+                    <p>Here are some videos that we found really interesting related to the website's topic.</p><br><br>
+                    <div class="youtube" id="fCJuC87pBss" style="width: 1064px; height: 768px;"></div>
+                    <br>
+                    <p class="videocaption">
+                        <a href="https://www.youtube.com/watch?v=fCJuC87pBss">"Dennis Ritchie Motion Graphic"</a> by <a href="https://www.youtube.com/user/legoghost">Rafaël De Jongh</a></p>
+                    <br>
+                    <p>Dennis Ritchie life resumed in a motion graphics video. More information on this topic <a href="./personallife.html">here</a>.</p>
+                    <br>
+                    <br>
+                    <div class="youtube" id="JoVQTPbD6UY" style="width: 1064px; height: 768px;"></div>
+                    <br>
+                    <p class="videocaption">
+                        <a href="https://www.youtube.com/watch?v=JoVQTPbD6UY">"Ken Thompson and Dennis Ritchie Explain UNIX (Bell Labs)"</a> by <a href="https://www.youtube.com/user/VortexTech">VortexTech</a></p>
+                    <br>
+                    <p>On this video, Ken Thompson and Dennis Ritchie introduce Unix. More information on this topic <a href="./unix.html">here</a>, or see the extended interview on the next video.</p>
+                    <br>
+                    <br>
+                    <div class="youtube" id="XvDZLjaCJuw" style="width: 1064px; height: 768px;"></div>
+                    <br>
+                    <p class="videocaption">
+                        <a href="https://www.youtube.com/watch?v=XvDZLjaCJuw">"UNIX: Making Computers Easier To Use -- AT&amp;T Archives film from 1982, Bell Laboratories"</a> by <a href="https://www.youtube.com/channel/UCnpDurxReTSpFs5-AhDo8Kg">AT&amp;T Tech Channel</a></p><br><p>On this video, Ken Thompson and Dennis Ritchie introduce Unix thoroughly through a film from Bell Labs. More information on this topic <a href="./unix.html">here</a>, or see compiled interview on the previous video.</p>
+                    <br>
+                    <br>
+                    <div class="youtube" id="g7P16mYDIJw" style="width: 1064px; height: 768px;"></div>
+                    <br>
+                    <p class="videocaption">
+                        <a href="https://www.youtube.com/watch?v=g7P16mYDIJw">"The Computer Chronicles: UNIX (1985)"</a> by <a href="https://www.youtube.com/user/boobe2007">Bob Blahloblaw</a></p><br><p>Here is another video about the UNIX operating system, taken from the Computer Chronicles television series. More information on this topic <a href="./unix.html">here</a>, or see compiled interview on the previous video.</p>
+                    <br>
+                    <br>
+                    <div class="youtube" id="XMm0HsmOTFI" style="width: 1064px; height: 768px;"></div>
+                    <br>
+                    <p class="videocaption">
+                        <a href="https://www.youtube.com/watch?v=XMm0HsmOTFI">"The Code: Story of Linux documentary (MULTiSUB)"</a> by <a href="https://www.youtube.com/channel/UCqHGotzs8NZABgorJjWNppg">Adam N.</a></p><br><p>Documentary about the creation of Linux and some basic concepts about Open Source Software. More information on this topic <a href="./unix.html">here</a>, or see the documentary "Revolution OS" about Linux on the next video.</p>
+                    <br>
+                    <br>
+                    <div class="youtube" id="plMxWpXhqig" style="width: 1064px; height: 768px;"></div>
+                    <br>
+                    <p class="videocaption"><a href="https://www.youtube.com/watch?v=plMxWpXhqig">"Revolution OS - Documentário sobre Linux - Português"</a> by <a href="https://www.youtube.com/channel/UCdjXF4p2BIvvY_0P_-_TgRw">Jardel Sacramento</a></p><br><p>Another documentary about the creation of Linux and the creation of GNU GPL license and Open Source software, subtitled in portuguese. More information on this topic <a href="./unix.html">here</a>.</p>
+                    <br>
+                    <br>
+                    <div class="youtube" id="umF6SNYaJNw" style="width: 1064px; height: 768px;"></div>
+                    <br>
+                    <p class="videocaption">
+                        <a href="https://www.youtube.com/watch?v=umF6SNYaJNw">"Dennis Ritchie's video interview June 2011 by DennisRitchie.in"</a> by <a href="https://www.youtube.com/user/saranpcworld">Al Sahran</a></p><br><p>Dennis Ritchie Interview in 2011, few months before his death. More information on this topic <a href="./personallife.html">here</a>.</p>
+                    <br>
+                    <div class="youtube" id="9sJUDx7iEJw" style="width: 1064px; height: 768px;"></div>
+                    <br>
+                    <p class="videocaption">
+                        <a href="https://www.youtube.com/watch?v=9sJUDx7iEJw">"Richard Stallman Free Software Song"</a> by <a href="https://www.youtube.com/user/AZATHOR">Ruddy Catalán</a></p><br><p>Song written and performed by Richard Stallman (founder of the Free Software Movement and of the GNU project), highlighting the advantages of the free software. More information on this topic <a href="./unix.html">here</a>.</p>
+                    <br>
+                    <br>
+                    <div class="youtube" id="1S1fISh-pag" style="width: 1064px; height: 768px;"></div>
+                    <br>
+                    <p class="videocaption">
+                        <a href="https://www.youtube.com/watch?v=1S1fISh-pag">"Write in C"</a> by <a href="https://www.youtube.com/user/albertveli">Albert Veli</a></p><br><p>Comic song, pointing the advantages of C when compared to other languages. More information on this topic <a href="./c.html">here</a>.</p>
+                    <br>
+                    <br>
+                    <div class="youtube" id="Ag1AKIl_2GM" style="width: 1064px; height: 768px;"></div>
+                    <br>
+                    <p class="videocaption">
+                        <a href="https://www.youtube.com/watch?v=Ag1AKIl_2GM">"Free software, free society: Richard Stallman at TEDxGeneva 2014"</a> by <a href="https://www.youtube.com/user/TEDxTalks">TEDx Talks</a></p><br><p>TEDx talk by the fouder of the Free Software movement, Richard Stallman. More information on this topic <a href="./unix.html">here</a>.</p>
+                    <br>
+                    <p><i>All the videos above are under the <a href="https://www.youtube.com/yt/copyright/">Youtube Copyright License</a>. We do not own any of the videos.</i></p>
+                    <br>
+                </div>
+                <div id="Bibliography">
+                    <br>
+                    <br>
+                    <h3>Bibliography</h3>
+                    <p>All the content on this webpage was based on the following websites:</p>
+                    <ul>
+                        <li><a href="http://en.wikipedia.org/wiki/Bell_Labs" target="_blank">http://en.wikipedia.org/wiki/Bell_Labs</a></li>
+                        <li><a href="http://en.wikipedia.org/wiki/Dennis_Ritchie" target="_blank">http://en.wikipedia.org/wiki/Dennis_Ritchie</a></li>
+                        <li><a href="http://www.notablebiographies.com/supp/Supplement-Mi-So/Ritchie-Dennis.html" target="_blank">http://www.notablebiographies.com/supp/Supplement-Mi-So/Ritchie-Dennis.html</a></li>
+                        <li><a href="http://en.wikipedia.org/wiki/Turing_Award" target="_blank">http://en.wikipedia.org/wiki/Turing_Award</a></li>
+                        <li><a href="http://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">http://en.wikipedia.org/wiki/C_(programming_language)</a></li>
+                        <li><a href="http://www.codingunit.com/the-history-of-the-c-language" target="_blank">http://www.codingunit.com/the-history-of-the-c-language</a></li>
+                        <li><a href="http://www.enggpedia.com/computer-engineering-encyclopedia/301-programming-languages/1880-features-characteristics-c-" target="_blank">http://www.enggpedia.com/computer-engineering-encyclopedia/301-programming-languages/1880-features-characteristics-c-</a></li>
+                        <li><a href="http://laurel.datsi.fi.upm.es/~ssoo/C/section2_4_5.html" target="_blank">http://laurel.datsi.fi.upm.es/~ssoo/C/section2_4_5.html</a></li>
+                        <li><a href="http://en.wikipedia.org/wiki/C_data_types" target="_blank">http://en.wikipedia.org/wiki/C_data_types</a></li>
+                        <li><a href="http://www.tutorialspoint.com/cprogramming/" target="_blank">http://www.tutorialspoint.com/cprogramming/</a></li>
+                        <li><a href="http://en.wikibooks.org/wiki/C_Programming/Memory_management" target="_blank">http://en.wikibooks.org/wiki/C_Programming/Memory_management</a></li>
+                        <li><a href="http://www.le.ac.uk/users/rjm1/cotter/page_05.htm" target="_blank">http://www.le.ac.uk/users/rjm1/cotter/page_05.htm</a></li>
+                        <li><a href="http://www.computerhope.com/jargon/p/prinspoo.htm" target="_blank">http://www.computerhope.com/jargon/p/prinspoo.htm</a></li>
+                        <li><a href="http://www.wisegeek.com/what-is-a-network-driver.htm" target="_blank">http://www.wisegeek.com/what-is-a-network-driver.htm</a></li>
+                        <li><a href="http://en.wikipedia.org/wiki/List_of_C-based_programming_languages" target="_blank">http://en.wikipedia.org/wiki/List_of_C-based_programming_languages</a></li>
+                        <li><a href="http://cm.bell-labs.com/cm/cs/who/dmr/bigbio1st.html" target="_blank">http://cm.bell-labs.com/cm/cs/who/dmr/bigbio1st.html</a></li>
+                        <li><a href="http://www.brainyquote.com/quotes/authors/d/dennis_ritchie.html" target="_blank">http://www.brainyquote.com/quotes/authors/d/dennis_ritchie.html</a></li>
+                        <li><a href="http://en.wikiquote.org/wiki/Dennis_Ritchie" target="_blank">http://en.wikiquote.org/wiki/Dennis_Ritchie</a></li>
+                        <li><a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html" target="_blank">http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html</a></li>
+                        <li><a href="http://mag-corp.com/blog/best-offshore-software-development-services-in-india/" target="_blank">http://mag-corp.com/blog/best-offshore-software-development-services-in-india/</a></li>
+                        <li><a href="http://en.wikipedia.org/wiki/Unix" target="_blank">http://en.wikipedia.org/wiki/Unix</a></li>
+                        <li><a href="http://cm.bell-labs.com/who/dmr/hist.html" target="_blank">http://cm.bell-labs.com/who/dmr/hist.html</a></li>
+                        <li><a href="http://www.zdnet.com/article/without-dennis-ritchie-there-would-be-no-jobs/" target="_blank">http://www.zdnet.com/article/without-dennis-ritchie-there-would-be-no-jobs/</a></li>
+                        <li><a href="http://www.ieeepnec.org/dennis-ritchie/http://www.ieeepnec.org/dennis-ritchie/" target="_blank">http://www.ieeepnec.org/dennis-ritchie/</a></li>
+                        <li><a href="http://www.itsavvy.in/unix-important" target="_blank">http://www.itsavvy.in/unix-important</a></li>
+                        <li><a href="http://www.cs.berkeley.edu/~brewer/cs262/unix.pdf" target="_blank">http://www.cs.berkeley.edu/~brewer/cs262/unix.pdfhttp://www.cs.berkeley.edu/~brewer/cs262/unix.pdf</a></li>
+                        <li><a href="http://www.free-soft.org/" target="_blank">http://www.free-soft.org/</a></li>
+                        <li><a href="https://www.gnu.org/philosophy/free-sw.html" target="_blank">https://www.gnu.org/philosophy/free-sw.html</a></li>
+                        <li><a href="http://www.linfo.org/open_source.html" target="_blank">http://www.linfo.org/open_source.html</a></li>
+                        <li><a href="https://www.freebsd.org/doc/en/articles/explaining-bsd/what-a-real-unix.html" target="_blank">https://www.freebsd.org/doc/en/articles/explaining-bsd/what-a-real-unix.html</a></li>
+                        <li><a href="http://en.wikipedia.org/wiki/Comparison_of_BSD_operating_systems" target="_blank">http://en.wikipedia.org/wiki/Comparison_of_BSD_operating_systems</a></li>
+                        <li><a href="http://www.linux.org/threads/what-is-linux.4076/" target="_blank">http://www.linux.org/threads/what-is-linux.4076/</a></li>
+                        <li><a href="https://www.cs.cmu.edu/~awb/linux.history.html" target="_blank">https://www.cs.cmu.edu/~awb/linux.history.html</a></li>
+                        <li><a href="http://www.unix.org/what_is_unix/history_timeline.html" target="_blank">http://www.unix.org/what_is_unix/history_timeline.html</a></li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+      </div>
+      <!--Footer-->
+      <nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+         <div id="footer" align="center">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/"href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Website - Dennis Ritchie - The Father of Modern Computing</span> by <a href="mailto:diogodanielsoaresferreira@ua.pt">Diogo Daniel Soares Ferreira</a> e <a href="mailto:luisleira@ua.pt">Luís Davide Jesus Leira</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"  target="_blank">Creative Commons Atribuição 4.0 Internacional License</a>.
+         </div>
+      </nav>
+      <!--Scripts-->
+      <script src="https://labnol.googlecode.com/files/youtube.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+      <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+      <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+      <script src="http://code.createjs.com/soundjs-0.6.0.min.js"></script>
+      <script src="scripts.js"></script>
+   </body>
+</html>
+<!--
+   Diogo Daniel Soares Ferreira
+   Luís Davide Jesus Leira
+   Laboratórios de Informática - MIECT
+   Universidade de Aveiro, 2014
+   -->

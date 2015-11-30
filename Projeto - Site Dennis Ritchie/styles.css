@@ -1,0 +1,288 @@
+body{
+    background-color: #E6E3E3;
+    padding-top: 31px;
+    line-height: 150%;
+}
+
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+    background-color: #E6E3E3;
+}
+
+.header{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navbar-fixed-top{
+    box-shadow: 2px 2px 2px #888888;
+}
+
+#banner {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.lefttitle {
+    text-align: left;
+}
+
+#footer{
+    background-color: #F8F8F8 ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.col-md-3{
+    position: fixed;
+    top: 100px;
+    right: -175px;
+    margin-top: 20px;
+}
+
+.moveleft{
+    -moz-transition: all 0.1s ease-in-out; 
+    -moz-transform:translateX(0px); 
+    -o-transition: all 0.1s ease-in-out; 
+    -o-transform:translateX(0px); 
+    -webkit-transition: all 0.1s ease-in-out; 
+    -webkit-transform:translateX(0px); 
+    -ms-transition: all 0.1s ease-in-out; 
+    -ms-transform:translateX(0px); 
+    transition: all 0.1s ease-in-out; 
+    transform:translateX(0px); 
+}
+
+.moveleft:hover{
+    -moz-transform:translateX(-3px);
+    -o-transform:translateX(-3px);
+    -webkit-transform:translateX(-3px);
+    -ms-transform:translateX(-3px);
+    transform:translateX(-3px);
+}
+
+
+.line-separator{
+    height: 1px;
+    background: #E6E3E3;
+    border-bottom: 1px solid #313030;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-main{
+    width: 94%;
+    background-color: #E6E3E3;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.page{
+    width: 100%;
+}
+
+.dennis{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.caption{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    display: block;
+    text-align: center;
+    align-content:center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure img {
+    display: block;
+    vertical-align: top;
+    box-shadow: 10px 10px 10px #888888;
+    align-content:center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure figcaption, .videocaption{
+    display: block;
+    text-align: center;
+    border: 1px solid #E3E0E0;
+    border-radius: 4px;
+    background-color: #F8F8F8;
+    padding: 4px 4px 4px 4px;
+    box-shadow: 10px 10px 10px #888888;
+    align-content:center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.mainimage{
+    max-width: 100%;
+    height: auto;
+    margin-top:0px;
+}
+
+.navbar-inverse .navbar-nav{
+    margin-left: 30px;
+}
+
+
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 200%;
+}
+
+.thumbnail{
+    box-shadow: 10px 10px 10px #888888;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+}
+
+.panel-body{
+    box-shadow: 10px 10px 10px #888888;
+}
+
+.nav-pills>li.notactive>a{
+    background-color: #347AB6;
+    color: white;
+}
+
+.nav-pills>li.hover>a{
+    background-color: grey;
+    color: black;
+}
+
+.nav-pills>li.active>a{
+    background-color: #275D8B;
+    color: white;
+}
+
+.panel-body{
+    background-color: #F8F8F8;
+    border-radius: 10px;
+}
+
+.img-thumbnail{
+    background-color: #F8F8F8;
+}
+
+.panel{
+    background-color: #E6E3E3;
+    border-top-style: none;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a{
+    border-radius: 5px;
+}
+
+.opacityit{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -webkit-opacity: 0.9;
+    -o-opacity: 0.9;
+    opacity: 0.9;
+}
+
+.opacityit:hover{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+}
+
+.vis.timeline{
+    box-shadow: 10px 10px 10px #888888;
+    border-radius: 10px;
+}
+
+#cchart {
+    height: 400px; 
+    min-width: 310px; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+#button{
+    background:transparent;
+    border:none;
+    outline:none;
+    display:block;
+    height:200px;
+    width:200px;
+    cursor:pointer;
+    color:#E6E3E3;
+    z-index: 99;
+}
+
+.suggestion{
+    font-size: 80%;
+}
+
+#mynetwork {
+    position: static;
+    height: 500px;
+    width: 100%;
+}
+
+#map {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 100%;
+    height: 400px;
+}
+
+.node circle {
+    fill: #fff;
+    stroke: #275D8B;
+    stroke-width: 3px;
+}
+
+.node text {
+    font: 12px sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+
+#cchart {
+    height: 400px;
+}
+
+#cchart2002 {
+    min-width: 310px;
+    height: 400px;
+    margin: auto;
+}

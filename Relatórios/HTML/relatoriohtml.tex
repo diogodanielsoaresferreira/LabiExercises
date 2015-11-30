@@ -1,0 +1,188 @@
+\documentclass[11pt,openright,twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[hmargin=4cm,vmargin=3.5cm,bmargin=3.5cm]{geometry}
+\usepackage[portuguese, english]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{indentfirst}
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\baselinestretch}{1.1}
+
+
+\title{\textbf{Relatório - HTML}}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{figure}
+\title{\textbf{Relatório - HTML}}
+\author{Turma 2 - Diogo Ferreira e Luís Leira\\\vspace{3cm}
+Universidade de Aveiro - Laboratórios de Informática}
+\date{\today}
+ \includegraphics[scale=1.5]{ua_logo.png}
+\end{figure}
+\end{titlepage}
+
+\selectlanguage{portuguese}
+\maketitle
+\tableofcontents
+\listoffigures
+
+\part{Apresentação}
+
+\chapter{Resumo}
+Neste relatório fazemos uma análise detalhada ao código-fonte HTML de uma página Web, repartido em quatro blocos: a barra superior esquerda, a barra superior central, o conteúdo principal e o footer (rodapé). É explicada a construção da página a partir da leitura do seu código e da sua interpretação no contexto, fazendo referência e justificando todos elementos presentes.
+\smallskip
+
+No final de toda a análise, fazemos uma pequena demonstração através da reprodução de uma réplica da página original (\url{http://xcoa.av.it.pt/~labi-t2g7/labi2014-t2g7/xkcd\%20\%20Pointers.htm}), mantendo um visual semelhante mas fazendo a alteração das listas presentes em toda a página por novas divisões, mostrando assim a flexibilidade da linguagem em estudo.
+\smallskip
+
+\chapter{Introdução}
+HTML é um linguagem de marcação de hipertexto \cite{markup}, criada nos anos 80 por Tim Beerners-Lee \cite{HTML}, físico britânico que na altura trabalhava no \textit{CERN} \cite{CERN}. Esta criação surgiu com o propósito de facilitar a partilha de ficheiros entre engenheiros e físicos no seu local de trabalho. No entanto, só no início dos anos 90 foi desenvolvido um browser capaz de a ler. É uma linguagem baseada em SGML \cite{SGML} e HyTime \cite{HyTime}, ambas linguagens de marcação de hipertexto (\autoref{estruhtml}).
+\smallskip
+
+\begin{figure}
+ \center
+ \includegraphics[scale=1]{HTML-source-code.jpg}
+ \caption{Estrutura ilustrativa de parte de um código HTML. Fonte: https://www.flickr.com/photos/istylr/}
+ \label{estruhtml}
+\end{figure}
+
+Desde 1995, com a evolução e crescimento da Internet \cite{Internetus}, a linguagem tornou-se imensamente popular pelo mundo inteiro, principalmente pela sua simplicidade e robustez. Ao longo dos anos, foi também recebendo alguns complementos de outras linguagens para completar a sua implementação amigável em páginas \textit{Web}. As principais linguagens de programação implementadas em conjunto com HTML são Javascript \cite{Javascript} e CSS \cite{Css}. A linguagem tem sido bastante desenvolvida, contendo já várias versões durante a sua evolução, sendo a mais recente a versão 5.0 \citep{w3c} (\autoref{estruhtml}).
+\smallskip 
+
+\begin{figure}
+ \center
+ \includegraphics[scale=.3]{HTML5_oval_logo.png}
+ \caption{Logótipo da versão mais recente de HTML: HTML 5.0. Fonte: http://commons.wikimedia.org/}
+ \label{estruhtml}
+\end{figure}
+
+Pretendemos, portanto, explorar apenas a linguagem HTML, ignorando todos os outros possíveis complementos associados. Para isso, vamos analisar uma página simples, que será apresentada posteriormente. Depois, iremos apresentar uma réplica do site analisado. O código-fonte criado é disponibilizado na pasta "Anexos", com o nome \textit{"xkcd Pointers.htm"} (\url{http://xcoa.av.it.pt/~labi-t2g7/labi2014-t2g7/Anexo/}).
+
+\part{Desenvolvimento}
+
+\chapter{Apresentação dos elementos e da página}
+HTML é a linguagem base da Internet \cite{Internetus}, sendo uma ferramenta indispensável atualmente. Permite que se façam páginas onde é possível inserir e posicionar texto, imagens, hiperligações e similares. Estas ações são possíveis através de elementos (que se caracterizam por \textit{tags} \cite{Tag}) que contêm instruções específicas que indicam como é que os interpretadores de HTML devem estruturar e definir a apresentação da página.
+\smallskip 
+
+Para a descrição detalhada de vários elementos que compõem esta linguagem, iremos ter como referência a página: \url{http://www.xkcd.com} (\autoref{fpage}), um website sob a licença \textit{Creative Commons} \cite{CreativeCommons}, visitado no dia 20 de Novembro de 2014. Será analisada a sua implementação e todos os elementos HTML que a constituem.
+\smallskip
+
+
+\begin{figure}
+ \center
+ \includegraphics[scale=.5]{fullpage.png}
+ \caption{Página completa de \url{http://www.xkcd.com/138/}.}
+ \label{fpage}
+\end{figure}
+
+
+No ficheiro \textit{Head}, que é composto pela informação correspondente à formatação da página, podemos ver que contém estilos externos CSS, logo expostos na primeira linha. Posteriormente, é-nos apresentado o título da página: \textit{xkcd}, seguido do nome da imagem, que será apresentado no topo do browser. O elemento meta, que vem a seguir, permite que haja uma compatibilidade associada à versão mais recente do Internet Explorer. Depois, contêm vários links de ligações e scripts para definir alguns conteúdos da página, que não iremos aprofundar, tal como foi referido anteriormente (Capítulo 2 - "Introdução").
+
+\chapter{Corpo da página}
+
+\section{Barra superior esquerda}
+Nesta pequena divisão é apresentado um menu de navegação que contém texto com hiperligações para outras secções do site (\autoref{bse}). Através de uma lista (usando as marcas \textless ul\textgreater (lista não ordenada) e \textless li\textgreater (item da lista)), podemos observar esta divisão em cinco tópicos.
+\smallskip 
+
+\begin{figure}
+ \center
+ \includegraphics[scale=.7]{bse.png}
+ \caption{Barra superior esquerda da página Web.}
+ \label{bse}
+\end{figure}
+
+
+Cada tópico é uma hiperligação para outra página, para podermos navegar no website de forma simples. Os tópicos da lista são \textit{Archive, What If?, Blag, Store} e \textit{About.} A parte final desta barra é a sua estrutura de caixa, descrita fora da sua divisão apresentada, um pouco mais à frente. Com o atributo \textit{class}=\textit{"Big Box"}, a divisão certamente referenciará um estilo CSS para o tipo de bloco desejado (cores, margens, tipo de letra e similares).
+
+
+\section{Barra superior central}
+Este bloco que se encontra no centro superior é composto por duas imagens e pelo seu slogan (\autoref{bsc}).
+\smallskip 
+
+\begin{figure}
+ \center
+ \includegraphics[scale=.5]{bcs.png}
+ \caption{Barra superior central da página Web.}
+ \label{bsc}
+\end{figure}
+
+
+Analisando o seu código, podemos ver que se decompõe em duas divisões. A primeira contém uma imagem, que é a imagem principal do site, com o seu tamanho especificado, uma hiperligação incluída e um texto alternativo caso esta não seja carregada. Contém, ainda, o slogan do website: \textit{"A Webcomic of romance, sarcasm, math and language".}
+\smallskip 
+
+A segunda divisão refere-se à segunda imagem que está no cabeçalho da página, com a devida hiperligação para o site desejado. Finalmente, tal como a divisão anteriormente referida, apresenta um estilo para o seu bloco algumas linhas abaixo.
+
+
+\section{Conteúdo principal}
+É agora analisado o conteúdo principal da página Web (\autoref{cen}). É iniciado pelo título da imagem apresentada. Depois, temos uma lista não ordenada com cinco itens. Cada item serve para navegar na imagem apresentada abaixo, pela respetiva ordem: navegação para a primeira imagem, para a imagem anterior, para uma imagem aleatória, para a imagem seguinte e para a última imagem.
+\smallskip
+
+\begin{figure}
+ \center
+ \includegraphics[scale=.3]{cen.png}
+ \caption{Conteúdo principal da página Web.}
+ \label{cen}
+\end{figure}
+
+
+Na divisão seguinte temos a imagem de uma hiperligação, com a sua descrição. As listas da divisão anterior referem-se a esta imagem, como tal o seu conteúdo não é estático, a hiperligação da imagem vai alterando conforme a navegação nos botões criados pelas listas acima. A imagem também é alterada de forma aleatório sempre que visitamos a página. No final desta divisão, temos novamente a mesma lista de navegação da imagem apresentada, mas desta vez por baixo da imagem.
+\smallskip
+
+Seguidamente, temos algum texto identificador da imagem apresentada juntamente com o seu URL para utilização noutros contextos. Na penúltima divisão do \textit{"body"}, temos mais uma linha de código destinada à programação em CSS.
+\smallskip
+
+
+\section{Footer}
+Por último, é analisado o rodapé da página, também chamado de \textit{Footer} (\autoref{foot}). Possuindo um \textit{id "bottom"}, podemos observar inicialmente uma imagem devidamente centralizada com um texto alternativo, caso o carregamento da imagem dê erro, e ainda um \textit{usemap}, usado para colocar várias hiperligações na própria imagem que a dividem em partes com hiperligações diferentes. Logo a seguir, podemos ver a especificação do \textit{map} usado anteriormente, chamado \textit{"Comic map"}. Esse atributo define formatos (\textit{"rect"}), locais (coordenadas), hiperligações e textos alternativos para as imagens definidas com o atributo. A principal vantagem do \textit{map} perante uma hiperligação normal numa imagem é a possibilidade de colocar várias hiperligações na mesma imagem, como pode ser visto nesta página.
+\smallskip 
+
+\begin{figure}
+ \center
+ \includegraphics[scale=.5]{footer.png}
+ \caption{Footer da página Web.}
+ \label{foot}
+\end{figure}
+
+
+Após as imagens temos uma nova divisão com a barra de pesquisa do \textit{Google.} Não iremos especificar o seu conteúdo em \textit{CSS} nem em \textit{Javascript,} mas em HTML puro. Para além de uma linha genérica para indicar a pesquisa, podemos ver um alguns \textit{scripts e links} apontando para os ficheiros de\textit{ CSS} e \textit{Javascript} da página de pesquisa hospedeira, a \textit{Google.} Depois, podemos ainda ver um campo\textit{ "form"} com o atributo \textit{"action"}, um modelo de formulário para partilha dados entre páginas \textit{Web} ou servidores. Dentro dele, temos vários campos do tipo \textit{"input"}, especificando o tipo, o nome ou o valor, de dados para troca. No fim da divisão temos duas hiperligações com texto que apontam para o \textit{feed} da página.
+\smallskip 
+
+A divisão seguinte é destinada a referências a links sugeridos pelo criador da página. Com o \textit{id} de \textit{"Comic Links"}, esta divisão contém apenas texto simples e referências a outras páginas \textit{Web} similares à apresentada. Seguidamente, a próxima divisão é uma brincadeira dos desenvolvedores do \textit{site,} que em letras muito pequenas, refere vários factos impossíveis sobre o seu algoritmo (\textit{"O algoritmo constantemente encontra Jesus"}).
+\smallskip 
+
+Finalmente, no final da página, é-nos apresentada a licença \textit{Creative Commons} da página. Esta divisão está dividida em dois parágrafos, com texto e com hiperligações para a licença e as suas condições. No final de todas as divisões, existe um comentário a indicar os criadores do layout do site.
+\smallskip 
+
+Já fora do footer, há uma tabela que delimita o layout da página, estando o conteúdo todo dentro dessa tabela.
+
+
+\chapter{Réplica da página e considerações}
+
+Como forma de mostrar a flexibilidade da linguagem, tentámos reproduzir uma réplica da página analisada. Foram retirados todos os elementos \textless ul\textgreater  (lista não-ordenada) e \textless ol\textgreater  (lista ordenada), e os seus respetivos \textless li\textgreater (itens da lista). Foram substituidos por divisões (\textless div\textgreater) apenas com texto e estilo definido em CSS. Tentámos manter ao máximo o estilo apresentado na página Web de base, mesmo escrevendo novas regras CSS para as novas divisões. As listas são conjuntos de excertos de texto ordenados linearmente, divisões são apenas divisões, não só de texto, mas de tudo o que se pode colocar na página web. Portanto, colocando divisões umas a seguir à outras podemos obter um formato do estilo de lista.
+\smallskip 
+
+Com o objetivo de manter o conteúdo principal minimamente navegável, também alterámos as hiperligações do menu principal de navegação entre imagens. Criámos mais duas páginas com imagens diferentes, para assim ser possível navegar entre as três imagens (colocadas em diferentes páginas).  As duas hiperligações à esquerda, colocadas para a navegação para a primeira e imagem anterior, redirecionam para a primeira página, enquanto que as últimas duas, referentes à imagem seguinte e à última, redirecionam para a terceira página. A hiperligação central vai redirecionar assim para a segunda página. Todas as outras hiperligações foram alteradas para não redirecionar para nenhuma página, visto que a página esperada é apenas uma réplica da original e não deverá depender de recursos externos. 
+\smallskip
+
+A página criada pode ser encontrada em \url{http://xcoa.av.it.pt/~labi-t2g7/labi2014-t2g7/xkcd\%20\%20Pointers.htm} e o seu código-fonte é disponibilizado na pasta "Anexo" , com o nome \textit{"xkcd Pointers.htm"}, bem como o das outras duas páginas criadas, que também pode ser encontrado aqui \url{http://xcoa.av.it.pt/~labi-t2g7/labi2014-t2g7/Anexo/} (\textit{"xkcd Pointerslast.htm"} e \textit{"xkcd Pointersnext.htm"}) com este relatório em formato pdf. Recordamos que para estas ligações funcionarem devidamente é necessário estar ligado à rede da Universidade de Aveiro.
+
+\part{Conclusão}
+
+\chapter{Conclusão}
+Tendo como objeto do estudo a linguagem HTML, após a realização deste relatório podemos dizer que é uma linguagem bastante importante na criação e desenvolvimento de páginas web. Através uma análise detalhada e a elaboração de uma réplica da página \url{http://www.xkcd.com}, foi possível abordar uma série de elementos essenciais e compreender a sua estruturação dentro de uma página.
+\smallskip
+
+Concluímos que é uma linguagem que só por si só poderá ser bastante limitada e, portanto, recorre-se a outras linguagens complementares como CSS e Javascript. Existem, também, conflitos devido à diversidade de navegadores existentes, visto que alguns poderão não ser capazes de interpretar o código de uma página da mesma forma que outros, produzindo resultados ligeiramente diferentes.
+\smallskip
+
+A explicação dos elementos poderia ter sido complementada com excertos de código, o que tornaria mais fácil a sua compreensão e posterior aplicação por parte de terceiros. Poderá também carecer de alguma informação em alguns casos. Tentámos arranjar soluções válidas para tentar manter a réplica da página o mais semelhante possível à original, tendo em conta que não podia conter elementos \textless ul\textgreater, \textless li\textgreater, \textless dl\textgreater ou \textless ol\textgreater.
+
+\bibliography{bibe}
+\bibliographystyle{plain}
+
+
+\end{document}

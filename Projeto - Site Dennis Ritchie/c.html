@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dennis Ritchie - The Father of Modern Computing</title>
+      <meta name="keywords" content="HTML, CSS, Javascript, Dennis Ritchie, C, Unix, Universidade de Aveiro, Computing">
+      <meta name="description" content="The importance of Dennis Ritchie in the Modern World of Computing">
+      <meta charset="utf-8">
+      <meta name="author" content="Diogo Daniel Soares Ferreira and Luís Davide Jesus Leira">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+      <!--DennisRitchieFont-->
+      <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+      <!--Visjs CSS-->
+      <link href="http://visjs.org/dist/vis.js" rel="stylesheet">
+      <!--Styles CSS-->
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body onload="treeChart()">
+      <!--topContainer-->
+      <div>
+         <!--navegationBar-->
+         <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+               <div class="container">
+                  <a href="#" class="navbar-brand">Dennis Ritchie</a>
+                  <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                  <font color="white">Menu</font>
+                  </button>
+                  <div class="collapse navbar-collapse navHeaderCollapse">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="./index.html" accesskey="h">Home</a></li>
+                        <li><a href="./personallife.html" accesskey="p">Personal life</a></li>
+                        <li class="active"><a href="./c.html">C</a></li>
+                        <li><a href="./unix.html" accesskey="u">Unix</a></li>
+                        <li><a href="./resources.html" accesskey="r">Resources</a></li>
+                        <li><a href="./about.html" accesskey="a">About</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--middleContainer-->
+      <div class="container">
+         <div class="row">
+            <!--rightMenu-->
+            <div class="col-md-3">
+               <ul class="nav nav-pills nav-stacked">
+                  <li class="active moveleft"><a href="#History">History</a></li>
+                  <li class="active moveleft"><a href="#Advantages">Advantages</a></li>
+                  <li class="active moveleft"><a href="#Data Types">Data Types</a></li>
+                  <li class="active moveleft"><a href="#Memory Management">Memory<br>Management</a></li>
+                  <li class="active moveleft"><a href="#Uses of C">Uses of C</a></li>
+                  <li class="active moveleft"><a href="#candothers">C compared to other<br> programming<br> languages</a></li>
+                  <li class="active moveleft"><a href="#Simple Program">Simple Program</a></li>
+                  <li class="active moveleft"><a href="#C and derivatives">C and derivatives</a></li>
+               </ul>
+            </div>
+            <!--Content-->
+            <div class="col-main">
+               <h1 class="header">C</h1>
+               <div id="History">
+                  <br>
+                  <div class="line-separator"></div>
+                  <br>
+                  <h3>History</h3>
+                  <p>In the sixties, Dennis Ritchie along with other employees of Bell Labs (AT&amp;T) worked on a project called Multics, which goal was to develop an operative system to run on a large computer and to be used for thousands of users simultaneously. Unfortunately, in 1969, the project was aborted due to high costs. So, they had to search for new projects. Ken Thompson, another worker of Bell Labs, develop a whole new file system in assembly language. After a while, also Dennis Ritchie started to make improvements on the system, and <a href="unix.html">Unix</a> was born. Unix later was improved on Fortran and B. B was written by Ken Thompson in 1970 and it is called the predecessor of C. Although it is a high-level language, B had some problems: it did not recognize data-types nor "structures". So, in 1971, Dennis Ritchie started to improve the B language, turning it into C. It keeped most of the B syntax, but added many other changes, like data-types. The C language was very powerful, yet high-level programming, making it the default language when programming operative systems and most of the software. Eventually, Unix ended up being completely rewritten in C.</p>
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                        <h4>"When I read commentary about suggestions for where C should go, I often think back and give thanks that it wasn't developed under the advice of a worldwide crowd."</h4>
+                        <h3 class="dennis">Dennis Ritchie</h3>
+                     </div>
+                  </div>
+               </div>
+               <div id="Advantages">
+                  <br>
+                  <br>
+                  <h3>Advantages</h3>
+                  <p>The language C has some characteristics that make it really powerful and a great language to programm with: 
+                  <ul>
+                     <li><b>Low-level or high-level programming</b>. C language provides low-level access to the memory, making it possible to run low-level activities. Besides, it has high-level constructors, making it easier for the user to write the program. Officially, C is a mid-level language.</li>
+                     <li><b>Portability.</b> Any C program is independent on any platform, does not depend on the configurations of the machine.</li>
+                     <li><b>Modularity</b>. This is one of the most appreciated features of C. We can "break" a program into small ones for making it easier to write and/or read. Also, the debugging will become faster if well written.</li>
+                     <li><b>Speed</b>. As a mid-level language, C is faster to compile than other high-level languages, like Java.</li>
+                     <li><b>The language</b>. C is a very structured language, with few reserved words, making it easier to the programmer to write programms. Due to the modularity, C is also extensible, because we can add what we want to any program without have to write many line of code, just calling the functions already created.</li>
+                     </p>
+                     <div class="panel panel-default">
+                        <div class="panel-body">
+                           <h4>"[C has] the power of assembly language and the convenience of … assembly language."</h4>
+                           <h3 class="dennis">Dennis Ritchie</h3>
+                        </div>
+                     </div>
+               </div>
+               </ul>
+               <div id="Data Types">
+                  <br>
+                  <br>
+                  <h3>Data Types</h3>
+                  <p>In C, a data type is used to declare variables of different types. The type determines how much space it will occupy in the storage. There are a few types of Data:
+                  <ol>
+                     <li><b>Basic Types</b>. Simple arithmetic types. The types most used in a C program. There are some that occupy more memory than others, the most used are int (2 or 4 bytes), for integers, char (1 byte) for characters, and floating point to represent decimal places, like float (4 bytes).</li>
+                     <li><b>Boolean type</b>. A boolean type ("bool") is really simple to use. It returns "true" or "false" and can only have these two values.</li>
+                     <li><b>Structures</b>. Structures are a way to store dynamically different types of different data. A structure can have any of the other types of data inside it.</li>
+                     <li><b>Arrays</b>. Arrays are ordered sequences of numbers or characters. If we want to print a sentence, we create a String. A string is a sub-type of an array, for it is a sequence of characters.</li>
+                     <li><b>Pointers</b>. A pointer is a new way to deal with memory problems. It is a variable that stores an address of memory. For example, if we want to know the exact physical memory location of an integer, we have to use a pointer, pointing to that integer.</li>
+                  </ol>
+                  </p>
+               </div>
+               <div id="Memory Management">
+                  <br>
+                  <br>
+                  <h3>Memory Management</h3>
+                  <p>Like it was said before, although C is a medium-level language, has also the power to adress directly the memory adress of a computer, making it easier to create some specific programs. For example, we want to create an array, but we don't know how long it will be its size. Since we can't change the dimension after it has been initialized, how do we do? Dinamic memory allocation is a way to fix this problems. There are four functions to adress this topic: <b>calloc, free, malloc</b> and <b>realloc</b>.</p>
+                  <p>The <b>Malloc</b> function provides a manual (by the programmer) memory allocation. Which means that malloc does not return a number, but a pointer to the memory created. After the initialization it is needed an error checking. It is possible that, if the memory that we want to initialize is more than the memory available, the pointer comes null. The difference between the malloc function and the <i>calloc</i> funtion is that the calloc function initializes the memory adresses to zero. The <i>Realloc</i> function resizes the memory passed by a pointer. Lastly, <i>free</i> releases the memory that was allocated by the last three functions. These four functions are very important in C when the programmer wants to otimize a software, rezising his memory in his course, allowing the program to be faster.</p>
+               </div>
+               <div id="Uses of C">
+                  <br>
+                  <br>
+                  <h3>Uses of C</h3>
+                  <p>We have seen that C is a very powerfull language and one of the most used in the world. But why use C?
+                  <ol>
+                     <li><b>Operating Systems.</b> C was designed because there was a need to write Unix in a simple language, yet with funcionalities of low-level (memory allocation). So, C is the default language to write operating systems.</li>
+                     <li><b>Language compilers.</b> C can also be used to create a language compiler of high level, almost as an intermediate between the machine and the language itself.</li>
+                     <li><b>Assemblers.</b> C can be used as a language compiler, but also as an assembler, doing the same thing as a language compiler, but for one specific language (assembly).</li>
+                     <li><b>Text Editors.</b> One of the main uses of C today is the creation of text editors, not only for programming, but just simple text editors for daily use.</li>
+                     <li><b>Print Spoolers.</b> A print spooler is a software program responsible for managing all print jobs currently being sent to the computer printer or print server. The print spooler program may allow a user to delete a print job being processed or otherwise manage the print jobs currently waiting to be printed.</li>
+                     <li><b>Network Drivers.</b> A network driver is a software responsible for connecting a computer to a network. Computers usually have ethernet and wireless: without network drivers, these devices do not work properly.</li>
+                     <li><b>Modern Programs.</b> Almost all of the major modern programs can be written in C! In fact, most of them actually are.</li>
+                     <li><b>Data Bases.</b> Data base creation can be made in C, due to C memory dinamic allocation, which makes it easier to create data bases.</li>
+                  </ol>
+                  </p></div>
+       
+        <div id="candothers"><br>
+                  <br>
+                  <h3>C compared to other programming languages</h3>
+            <br>
+          <div id="cchart"></div><br>
+          <p>As we can see in this chart, C is still the most used programming language at the time (December, 2014, based on <i>Tiobe Software</i>). In fact, since 1984, C was the most used language, until Java release. Since 2002, C and Java switched position a couple of times, always being the two languages most used in the world, as we can see in the next chart.</p><br>
+          <div id="cchart2002"></div><br>
+               </div>
+               <div id="Simple Program">
+                  <br>
+                  <br>
+                  <h3>Simple Program</h3>
+                  <p>Here is a simple C <i>Hello World</i> program:</p>
+                  <pre>
+        //C hello world example
+        #include &lt;stdio.h&gt;
+
+        int main()
+        {
+            printf("Hello world\n");
+            return 0;
+        }
+                            </pre>
+                  <p>The first line, that begins with "//", is a simple comment, that is ignored when compiling the code. The next line, "#include 
+                     &lt;stdio.h&gt;", includes the library <i>&lt;stdio.h&gt;</i> (standard IO). Now, the code will be able to read or write lines form the keyboard, or to print them in the monitor.</p>
+                  <p>Next to that, we have the main() function. Everything that the program will run after it has compiled is the main function. Then, we call the <i>printf</i> function, that prints the argument on the monitor. Lastly, the <i>return</i> determines what the function will return. In the main function, if the program has no bugs, it always returns 0.</p>
+               </div>
+               <div id="C and derivatives">
+                  <br>
+                  <br>
+                  <h3>C and derivatives</h3>
+                  <p>C has clearly influenced many languages, mostly syntactically. In 1979 C++ was created, by Bjarne Stroustrup, another Bell Labs employee. It is called the "C with Classes". It is today a big complement for C, because it is an object-oriented programming language. Although it does not offer the same memory allocation as C, C++ is called the "Super C". In 1986, Objective-C was created, an object-oriented dynamic language based heavily on Smalltalk and C. On the following years, it would emerge new object-oriented programming languages based in C that would became very popular, like Perl, Python, Java and C#.<br></p>
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                        <h4>"C++ and Java, say, are presumably growing faster than plain C, but I bet C will still be around."</h4>
+                        <h3 class="dennis">Dennis Ritchie</h3>
+                     </div>
+                  </div>
+                  <br>
+                  <br>
+                  <h4 class="lefttitle"><i><u>Derivatives of the most used programming languages in the world</u></i></h4>
+                  <p>In the following animation (Source: http://mag-corp.com/blog/), we can note that C influenced directly six of the most used programming languages in the world.</p>
+                  <div class="panel panel-default">
+                  <div id="mynetwork">
+	                 <div class="vis network-frame"></div>
+                  </div>
+                  <br><br>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!--Footer-->
+      <nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+         <div id="footer" align="center">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/"href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Website - Dennis Ritchie - The Father of Modern Computing</span> by <a href="mailto:diogodanielsoaresferreira@ua.pt">Diogo Daniel Soares Ferreira</a> e <a href="mailto:luisleira@ua.pt">Luís Davide Jesus Leira</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"  target="_blank">Creative Commons Atribuição 4.0 Internacional License</a>.
+         </div>
+      </nav>
+      <!--Scripts-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+      <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+      <script src="http://code.highcharts.com/highcharts.js"></script>
+      <script src="http://code.highcharts.com/highcharts-3d.js"></script>
+      <script src="http://code.highcharts.com/modules/exporting.js"></script>
+      <script src="http://visjs.org/dist/vis.js"></script>
+      <script src="scripts.js"></script>
+   </body>
+</html>
+<!--
+   Diogo Daniel Soares Ferreira
+   Luís Davide Jesus Leira
+   Laboratórios de Informática - MIECT
+   Universidade de Aveiro, 2014
+   -->
